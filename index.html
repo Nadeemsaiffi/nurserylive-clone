@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+  
+    <link
+      href="/js/bootstrap.min.js"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    
+    
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <p>Today Only: Flat 15% Off Plants, Code SUMMER15</p>
+    </div>
+
+    <div class="main-header" id="myHeader">
+      <div class="hamburger-icon-div" onclick="openNav()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="nursery_logo">
+        <a href="#" class="site_logo">
+          <img
+            class="image_logo"
+            src="/assets/nursery.png"
+            alt="nursery logo"
+          />
+        </a>
+      </div>
+      <div class="filter-search-middle-section">
+        <select class="categories" id="allCategories">
+          <option value="Addons">All Categories</option>
+          <option value="Addons">Addons</option>
+          <option value="Bulbs">Bulbs</option>
+          <option value="Bulk Gifts">Bulk Gifts</option>
+          <option value="Combo Packs - Seeds">Combo Packs - Seeds</option>
+          <option value="Combo Packs - Bulbs">Combo Packs - Bulbs</option>
+          <option value="Combo Packs - Pebbles">Combo Packs - Pebbles</option>
+          <option value="Combo Packs - Plants">Combo Packs - Plants</option>
+          <option value="Combo Packs - Pots">Combo Packs - Pots</option>
+          <option value="Combo Packs - Loops">Combo Packs - Loops</option>
+        </select>
+
+        <input
+          class="search"
+          type="text"
+          placeholder="Search.."
+          name="search"
+        />
+
+        <span class="search_icon"><i class="fa fa-search"></i></span>
+      </div>
+      <div class="cart-icon">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="small-screen-header-section">
+      <div class="small-screen-header">
+        <div class="hamburger-icon-div" onclick="openNav()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="nursery_logo">
+          <a href="#" class="site_logo">
+            <img
+              class="image_logo"
+              src="/assets/nursery.png"
+              alt="nursery logo"
+            />
+          </a>
+        </div>
+        <div class="cart-icon">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="small-screen-search-bar">
+        <input
+          class="search"
+          type="text"
+          placeholder="Search.."
+          name="search"
+        />
+
+        <span class="search_icon"><i class="fa fa-search"></i></span>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <section class="navbar-login-flex-container">
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropdownButton">
+              Gardening
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropContent">
+              <a href="#">Plants' packs by Location</a>
+              <a href="#">Plants' packs by Ocassions</a>
+              <a href="#">Plants' packs by Seasons</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdownButton">
+              Plants
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropContent">
+              <a href="#">Plants by Type</a>
+              <a href="#">Plants by Location</a>
+              <a href="#">Plants by Season</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdownButton">
+              Seeds
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropContent">
+              <a href="#">Flower Seeds</a>
+              <a href="#">Organic Seeds</a>
+              <a href="#">Other Seeds</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdownButton">
+              Bulbs
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropContent">
+              <a href="#">Summer Special Bulbs</a>
+              <a href="#">Lily Bulbs</a>
+              <a href="#">Flower Bulbs</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdownButton">
+              Planters
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropContent">
+              <a href="#">Planters by Type</a>
+              <a href="#">Planters by Color</a>
+              <a href="#">Planters by Shape</a>
+            </div>
+          </div>
+
+          <a href="#">Soil & Fertilizer</a>
+
+          <div class="dropdown">
+            <button class="dropdownButton">
+              Gifts
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropContent">
+              <a href="#">Green Gifts</a>
+              <a href="#">Gifts For Loved Ones</a>
+              <a href="#">Gifts for Festivals</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdownButton">
+              Pebbles
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropContent">
+              <a href="#">Pebbles by Color</a>
+              <a href="#">Pebbles by Type</a>
+              <a href="#">Pebbles by Size</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdownButton">
+              Accessories
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropContent">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+
+          <a href="#">Expertlive</a>
+          <a href="#">Workshops</a>
+          <a href="#">Blogs</a>
+          <a href="#">Offers</a>
+        </div>
+        <div>
+          <a href="#" class="login-link">Login</a>
+        </div>
+      </section>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="/assets/happiness.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="activities-grid-container">
+        <div class="activities-grid-item">
+          <div class="icons">
+            <i class="fa fa-mobile icons" aria-hidden="true"></i>
+          </div>
+          <div class="grid-content">
+            <div><b>Largest Nursery</b></div>
+            <div>1.2 Million plant lovers connected with us</div>
+          </div>
+        </div>
+        <div class="activities-grid-item">
+          <div class="icons">
+            <i class="fa fa-shopping-bag icons" aria-hidden="true"></i>
+          </div>
+          <div class="grid-content">
+            <div><b>All India Delivery</b></div>
+            <div>Delivering greenery across India since 2014</div>
+          </div>
+        </div>
+
+        <div class="activities-grid-item">
+          <div class="icons">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+          </div>
+          <div class="grid-content">
+            <b>Secure Shipping</b>
+            <div>Diligent care taken to deliver healthy plants</div>
+          </div>
+        </div>
+
+        <div class="activities-grid-item">
+          <div class="icons">
+            <i class="fa fa-user icons" aria-hidden="true"></i>
+          </div>
+          <div class="grid-content">
+            <div><b>Lifetime Support</b></div>
+            <div>We help you grow your garden for lifetime</div>
+          </div>
+        </div>
+      </div>
+      <DIV class="abc">
+       <img src="/assets/4.png" alt="">
+      </DIV>
+      <div class="whats-new-section">
+        <p>Value For Money - Upto 35% Off</p>
+        <div>
+      <div class="carousel-container">
+       
+        <div class="product-carousel">
+            <div class="product-card">
+                <img class="product-image" src="https://nurserylive.com/cdn/shop/products/nurserylive-g-top-4-die-hard-succulents-pack-980804_290x290.jpg?v=1679751768" alt="Product 1">
+               
+                <div class="product-price"> ₹1014</div>
+                <div class="product-discount"> ₹559</div>
+                <div class="product-title"> Top 4 Die Hard Succulents Pack</div>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img class="product-image" src="https://nurserylive.com/cdn/shop/products/nurserylive-combo-packs-plants-top-5-plants-for-healthy-and-prosperous-new-year-16969394913420_290x290.jpg?v=1634230380" alt="Product 2">
+                
+                <div class="product-price">₹1655</div>
+                <div class="product-discount">₹1450</div>
+                <div class="product-title">Pack of 3 Good Luck Jade Plants in Ceramic Pots</div>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img class="product-image" src="https://nurserylive.com/cdn/shop/products/nurserylive-combo-packs-plants-top-5-pollution-killer-plants-pack-16969392947340_290x290.jpg?v=1634230388" alt="Product 2">
+               
+                <div class="product-price">₹999</div>
+                <div class="product-discount">₹499</div>
+                <div class="product-title">Set of 3 Outdoor Flowering Plants for Beautiful Garden</div>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img class="product-image" src="https://nurserylive.com/cdn/shop/products/nurserylive-combo-packs-plants-plant-pack-for-healthy-home-office-155522_290x290.jpg?v=1679750881" alt="Product 2">
+              
+                <div class="product-price">₹1300</div>
+                <div class="product-discount">₹780</div>
+                <div class="product-title">Top 5 air purifier and oxygen enriching plant pack</div>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img class="product-image" src="https://nurserylive.com/cdn/shop/products/nurserylive-combo-packs-plants-pack-of-3-good-luck-jade-plants-in-ceramic-pots-16969154297996_290x290.jpg?v=1634225377" alt="Product 2">
+               
+                <div class="product-price">₹1500</div>
+                <div class="product-discount">₹999</div>
+                <div class="product-title">Plant Pack For Healthy Home-Office</div>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+           
+        </div>
+        <div class="whats-new-section">
+          <p>Upto 50% OFF | Ayurveda Prodcuts | New Launch</p>
+          <div>
+            <div class="carousel-container">
+       
+              <div class="product-carousel">
+                  <div class="product-card">
+                      <img class="product-image" src="https://nurserylive.com/cdn/shop/products/nurserylive-sv-supergreens-capsule1_290x290.jpg?v=1683633141" alt="Product 1">
+                     
+                      <div class="product-price"> ₹699</div>
+                      <div class="product-discount"> ₹459</div>
+                      <div class="product-title"> Supergreen - 120 Tablets</div>
+                      <button class="add-to-cart-button">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                      <img class="product-image" src="https://nurserylive.com/cdn/shop/files/nurserylive-sv-shilajit-resins5_290x290.jpg?v=1687262185" alt="Product 2">
+                      
+                      <div class="product-price">₹1499</div>
+                      <div class="product-discount">₹899</div>
+                      <div class="product-title">Himalayan Shilajit - 20 g</div>
+                      <button class="add-to-cart-button">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                      <img class="product-image" src="https://nurserylive.com/cdn/shop/products/nurserylive-sv-shatavari-powder2-416922_290x290.jpg?v=1683704065" alt="Product 2">
+                     
+                      <div class="product-price">₹599</div>
+                      <div class="product-discount">₹499</div>
+                      <div class="product-title">Shatavari Powder - 250 g</div>
+                      <button class="add-to-cart-button">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                      <img class="product-image" src="https://nurserylive.com/cdn/shop/files/nurserylive-sv-amla-powder1_291x375.jpg?v=1685949283" alt="Product 2">
+                    
+                      <div class="product-price">₹249</div>
+                      <div class="product-discount">₹200</div>
+                      <div class="product-title">Amla Powder - 150 g</div>
+                      <button class="add-to-cart-button">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                      <img class="product-image" src="https://nurserylive.com/cdn/shop/products/nurserylive-sv-shilajit-capsule6-101341_290x290.jpg?v=1687332238" alt="Product 2">
+                     
+                      <div class="product-price">₹699</div>
+                      <div class="product-discount">₹499</div>
+                      <div class="product-title">Shilajit Gold Capsule with Gold Bhasma, Kaunch Beej, Safed Musli and Ashwagandha - 60 Capsules (500MG Each)</div>
+                      <button class="add-to-cart-button">Add to Cart</button>
+                  </div>
+                 
+              </div>
+    </div>
+
+      <div class="whats-new-section">
+        <p>What's New</p>
+        <div class="whats-new-grid-container">
+          <div class="whats-new-grid-column-one">
+            <div class="whats-new-grid-column-one-item">
+              <div class="whats-new-grid-content">
+                <h3>A Living Gift</h3>
+                <p>Express true emotions with a gift that grows forver.</p>
+                <button>Shop Now</button>
+                <img
+                  class="whats-new-images"
+                  src="/assets/plant1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="whats-new-grid-column-one-item">
+              <div class="whats-new-grid-content">
+                <h3>Microgreen Seeds</h3>
+                <p>Grow own food full of nutrients. flavour etc.</p>
+                <button>Shop Now</button>
+                <img
+                  class="whats-new-images"
+                  src="/assets/plant2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="whats-new-grid-column-two">
+            <div class="whats-new-grid-column-two-item">
+              <div class="whats-new-grid-content">
+                <h3>Miniature Garden</h3>
+                <p>Enjoy a living garden in tiny spaces.</p>
+                <button>Shop Now</button>
+                <img
+                  class="whats-new-images"
+                  src="/assets/plant3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="whats-new-grid-column-two-item">
+              <div class="whats-new-grid-content">
+                <h3>Organic Seeds</h3>
+                <p>Best quality seeds for organic lovers.</p>
+                <button>Shop Now</button>
+                <img
+                  class="whats-new-images"
+                  src="/assets/plant4.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="whats-new-grid-column-two-item">
+              <div class="whats-new-grid-content">
+                <h3>Event Gifts</h3>
+                <p>Corporate, Marriages, Parties ? You're covered..</p>
+                <button>Shop Now</button>
+                <img
+                  class="whats-new-images"
+                  src="/assets/plant5.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trending-section">
+        <p>Trending</p>
+        <div class="trending-section-plants mediaImage1">
+          <div class="trending-section-plant-div">
+            <img
+              class="trending-section-round-image"
+              src="/assets/bonsai.png"
+            />
+            <p>Bonsai Plants</p>
+          </div>
+          <div class="trending-section-plant-div">
+            <img
+              class="trending-section-round-image"
+              src="/assets/ceramic.jpg"
+            />
+            <p>Ceramic Planters</p>
+          </div>
+          <div class="trending-section-plant-div">
+            <img
+              class="trending-section-round-image"
+              src="/assets/kokedama.jpg"
+            />
+            <p>Kokedama Plants</p>
+          </div>
+          <div class="trending-section-plant-div">
+            <img
+              class="trending-section-round-image"
+              src="/assets/month.png"
+            />
+            <p>MonthWise Gardening</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="garden-decor">
+        <p>Garden Decor and Care</p>
+
+        <div class="garden-decor-container">
+          <div class="garden-decor-column-one">
+            <div class="garden-decor-column-one-item">
+              <div class="decor-grid-content">
+                <p>Planters</p>
+                <p>
+                  Add Color to your garden. 400+ pots of different colors,
+                  shapes and materials.
+                </p>
+                <img class="decor-images" src="/assets/planters.jpg" alt="" />
+              </div>
+            </div>
+            <div class="garden-decor-column-one-item">
+              <div class="decor-grid-content">
+                <p>Pebbles</p>
+                <p>
+                  Add visual and textural features to your garden with a wide
+                  range of natural pebbles.
+                </p>
+                <img class="decor-images" src="/assets/pebbles.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="garden-decor-column-two">
+            <div class="garden-decor-column-two-item">
+              <div class="decor-grid-content">
+                <p>Soil and Fertilizers</p>
+                <p>
+                  Healhty Food is a key to healthy Plants. Choose from a wide
+                  range of soil.
+                </p>
+                <img class="decor-images" src="/assets/soils.jpg" alt="" />
+              </div>
+            </div>
+            <div class="garden-decor-column-two-item">
+              <div class="decor-grid-content">
+                <p>Tools</p>
+                <p>
+                  Get a tool for every gardening activity and make it a fun
+                  experience.
+                </p>
+                <img class="decor-images" src="/assets/tools.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="learn-withus-section">
+        <p>Learn with Us</p>
+        <div class="learn-with-us-items">
+          <div class="learn-with-us-item1">
+            <h2>LIVE CONSULTATION</h2>
+            <p>25 mins video consultation with <br />gardening experts.</p>
+
+            <h3>WORTH RS. 199 FOR FREE*</h3>
+            <button class="learn-withus-buynow-button">BUY NOW</button>
+          </div>
+          <div class="learn-with-us-item2">
+            <h2>GARDENING WORKSHOPS</h2>
+            <p>
+              Workshops exclusively curated to help<br />
+              you learn cultivating plants and joy!
+            </p>
+
+            <h3>STARTING @RS. 299</h3>
+            <button class="learn-withus-buynow-button">BUY NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="from-blog-section">
+        <p>From The Blog</p>
+        <div class="from-blog-items">
+          <div class="from-blog-item1">
+            <div class="from-blog-image-box">
+              <img
+                class="from-blogs-images"
+                src="/assets/veggies.jpg"
+                alt=""
+              />
+            </div>
+            <div class="from-blog-content">
+              <h5>May 5, 2021 | Chandan Kashyap</h5>
+              <h2>
+                Veggies, Herbs And Fruits To Boost Your Immunity Against COVID
+                19
+              </h2>
+              <p>
+                Today, when India is facing the worst of Covid-19 the pandemic
+                began, we all are in a state of panic and restlessness. We don’t
+                know when this deadly virus can attack us or our loved ones and
+                prove to be fatal.
+              </p>
+              <button>Read Now</button>
+            </div>
+          </div>
+          <div class="from-blog-item2">
+            <div class="from-blog-image-box">
+              <img
+                class="from-blogs-images"
+                src="/assets/housePlants.jpg"
+                alt=""
+              />
+            </div>
+            <div class="from-blog-content">
+              <h5>April 28, 2021 | Chandan Kashyap</h5>
+              <h2>These 7 House Plants Will Keep Your House Cool In Summers</h2>
+              <p>
+                If you are someone who is worried about your carbon footprint
+                and always in a search to find how you can minimize your
+                contribution towards global warming then, this article can be a
+                great help for you.
+              </p>
+              <button>Read Now</button>
+            </div>
+          </div>
+          <div class="from-blog-item3">
+            <div class="from-blog-image-box">
+              <img
+                class="from-blogs-images"
+                src="/assets/feelings.jpg"
+                alt=""
+              />
+            </div>
+            <div class="from-blog-content">
+              <h5>April 12, 2021 | Chandan Kashyap</h5>
+              <h2>Do Plants Have Feelings?</h2>
+              <p>
+                Most of us never consider plants as sensory beings. Whatever
+                nature throws at them, they remain rooted to their spot. To grow
+                and give us a healthy life, they sense their nearby surroundings
+                and react.Plants help in every way.
+              </p>
+              <button>Read Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="featured-in-section">
+        <p>Featured In</p>
+
+        <div class="featuredin-logos-one">
+          <div class="featuredin-images-box">
+            <img class="featuredin-images" src="/assets/cnbc.png" alt="" />
+          </div>
+          <div class="featuredin-images-box">
+            <img
+              class="featuredin-images"
+              src="/assets/Dailyhunt.png"
+              alt=""
+            />
+          </div>
+          <div class="featuredin-images-box">
+            <img class="featuredin-images" src="/assets/dainik.jpg" alt="" />
+          </div>
+          <div class="featuredin-images-box">
+            <img class="featuredin-images" src="/assets/news18.png" alt="" />
+          </div>
+          <div class="featuredin-images-box">
+            <img
+              class="featuredin-images"
+              src="/assets/navbharat.jpg"
+              alt=""
+            />
+          </div>
+          <div class="featuredin-images-box">
+            <img
+              class="featuredin-images"
+              src="/assets/The_Economic_Times_logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="featuredin-logos-two">
+          <div class="featuredin-images-box2">
+            <img
+              class="featuredin-images"
+              src="/assets/Hindustan-Times-Logo.png"
+              alt=""
+            />
+          </div>
+          <div class="featuredin-images-box">
+            <img class="featuredin-images" src="/assets/divya.png" alt="" />
+          </div>
+          <div class="featuredin-images-box">
+            <img
+              class="featuredin-images"
+              src="/assets/The-Business-Times-Logo-RL181.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <div class="footer-items1">
+          <h4>Gardening Knowledge</h4>
+          <ul class="footer-item-list">
+            <li><a href="#">Blogs > Plant talk</a></li>
+            <li><a href="#">Blogs > Kitchen Gardening</a></li>
+            <li><a href="#">Blogs > Top 10 Plants</a></li>
+            <li><a href="#">Blogs > Plant Styling and DIY's</a></li>
+            <li><a href="#">Blogs > Sustainable Living</a></li>
+            <li><a href="#">blog.nurserylive.com</a></li>
+            <li><a href="#">ask.nurserylive.com</a></li>
+            <li><a href="#">greentv.nurserylive.com</a></li>
+          </ul>
+        </div>
+
+        <hr class="hr-style" />
+
+        <div class="footer-items1">
+          <h4>Info Pages</h4>
+          <ul class="footer-item-list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <hr class="hr-style" />
+        <div class="footer-items1">
+          <h4>Follow us</h4>
+          <ul class="footer-item-list">
+            <li>For any suggestions, <br />queries, complaints etc.</li>
+            <li>Email:care@nurserylive.com</li>
+          </ul>
+        </div>
+
+        <hr class="hr-style" />
+        <div class="footer-items1">
+          <h4>Subscribe</h4>
+          <ul class="footer-item-list">
+            <li>
+              Join us to receive gardening tips, offers, <br />
+              & more
+            </li>
+            <li><input type="email" placeholder="Email Address" /></li>
+            <li><button>Sign up</button></li>
+          </ul>
+        </div>
+        <hr class="hr-style" />
+        <div class="footer-items1">
+          <h4>Stay In Touch</h4>
+          <ul class="footer-item-list">
+            <li>For any suggestions, <br />queries, complaints etc.</li>
+            <li>Email:care@nurserylive.com</li>
+          </ul>
+        </div>
+
+        <hr class="hr-style" />
+      </div>
+
+      <hr class="hr-styles" />
+      <div class="last-footer">
+        <div class="contact-us">
+          <p>About NurseryLive | Jobs | Contact Us | All Collections</p>
+        </div>
+        <div class="copyright"><p>Copyright @2021 NurseryLive.</p></div>
+      </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Login</a>
+      <button class="dropdown-btn">
+        Gardening
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Plants' Packs by Features</a>
+        <a href="#">Top Plants' packs</a>
+        <a href="#">Plants' Packs by Seasons</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Plants<i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Plants by Type</a>
+        <a href="#">Flowering Plants</a>
+        <a href="#">Plants by Location</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Seeds<i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Flower Seeds</a>
+        <a href="#">Other Seeds</a>
+        <a href="#">Seeds' Pack</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Planters
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Planters by Type</a>
+        <a href="#">Planters by Color</a>
+        <a href="#">Planters by Shape</a>
+      </div>
+
+      <a href="#">Soil and Fertilizers</a>
+
+      <button class="dropdown-btn">
+        Gifts<i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Gifts</a>
+        <a href="#">Green Gifts</a>
+        <a href="#">Gifts for Festivals</a>
+      </div>
+
+      <button class="dropdown-btn">
+        Pebbles<i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#">Pebbles by Color</a>
+        <a href="#">Pebbles by Type</a>
+        <a href="#">Pebbles by Size</a>
+      </div>
+      <a href="#">Workshops</a>
+      <a href="#">Blogs</a>
+      <a href="#">Offers</a>
+
+      <a href="#">Contact</a>
+    </div>
+
+   
+   
+  </body>
+</html>
